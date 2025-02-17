@@ -1,0 +1,31 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/*.html/
+
+# Inside that directory, you can run several commands:
+Execução dos testes
+  yarn playwright test 
+  yarn playwright test --headed   (Hedless desligado, apresentado navegador)
+
+Abrindo interface (possibilitando a visibilizade de logs)
+  yarn playwright test --ui
+
+Execução apenas no Chorme
+  yarn playwright test --project=chromium
+
+Executar suite especifica
+  yarn playwright test example
+
+Debug
+  yarn playwright test --debug
+
+Gerar código
+  yarn playwright codegen
+
+Report
+  yarn playwright show-report
