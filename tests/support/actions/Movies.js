@@ -12,22 +12,29 @@ export class Movies {
         await this.page.getByRole('Button', { name: 'Cadastrar' }).click();
     }
 
-    async create(title, overview, company, release_year) {
+    async create(movie) {
         await this.goForm();
 
-        await this.page.locator('#title').fill(title); //Pega o elemento pelo ID
-        await this.page.getByLabel('Sinopse').fill(overview); //Pega o elemento pela label
+        await this.page.locator('#title').fill(movie.title); //Pega o elemento pelo ID
+        await this.page.getByLabel('Sinopse').fill(movie.overview); //Pega o elemento pela label
 
         //Select
         await this.page.locator('#select_company_id .react-select__indicator').click();
         // const html = await this.page.content();
         // console.log(html);
 
-        await this.page.locator('.react-select__option').filter({ hasText: company }).click();
+        await this.page.locator('.react-select__option').filter({ hasText: movie.company }).click();
 
         //Select
         await this.page.locator('#select_year .react-select__indicator').click();
-        await this.page.locator('.react-select__option').filter({ hasText: release_year }).click();
+        await this.page.locator('.react-select__option').filter({ hasText: movie.release_year }).click();
+
+        await this.page.locator('input[name=cover]')
+            .setInputFiles('tests/support/fixtures' + movie.cover);
+
+        if (movie.featured) {
+            await this.page.locator('.featured .react-switch').click();
+        }
 
         await this.submit();
     }

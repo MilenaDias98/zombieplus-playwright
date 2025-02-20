@@ -4,8 +4,8 @@
       "overview": "Um ex-investigador da ONU, Gerry Lane, embarca em uma corrida contra o tempo para impedir que uma pandemia zumbi destrua a humanidade.",
       "company": "Paramount Pictures",
       "release_year": 2013,
-      "featured": false,
-      "cover": "images/world_war_z.png"
+      "featured": true,
+      "cover": "/covers/movies/wwz.png"
     },
     "madrugada_dos_mortos": {
       "title": "Madrugada dos Mortos",
@@ -23,13 +23,13 @@
       "featured": false,
       "cover": "images/28_days_later.png"
     },
-    "resident_evil_o_hospede_maldito": {
+    "duplicate": {
       "title": "Resident Evil: O Hóspede Maldito",
       "overview": "Alice e um grupo de soldados precisam conter um vírus mortal que vazou de um laboratório subterrâneo, enquanto enfrentam zumbis e outras criaturas.",
-      "company": "Screen Gems",
+      "company": "Columbia Pictures",
       "release_year": 2002,
       "featured": false,
-      "cover": "images/resident_evil.png"
+      "cover": "/covers/movies/resident-evil.jpg"
     },
     "a_noite_dos_mortos_vivos": {
       "title": "A Noite dos Mortos-Vivos",
