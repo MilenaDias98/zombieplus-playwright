@@ -1,11 +1,11 @@
 import { expect } from '@playwright/test';
 
-export class Toast {
+export class Popup {
     constructor(page) {
         this.page = page;
     }
 
-    async containText(message) {
+    async haveText(message) {
         //Verificar e clicar no toast
         // await page.getByText('seus dados conosco').click();
         /*Permite pegar o código html no momento do TOAST = Abrir ui, rodar o código ir no console do ui e 
@@ -14,8 +14,10 @@ export class Toast {
         // console.log(content);
 
         //TOAST 
-        const toast = this.page.locator('.toast');
-        await expect(toast).toContainText(message);
-        await expect(toast).not.toBeVisible({ timeout: 5000 }); //Toast tem até 5s para desaparecer
+        const element = this.page.locator('.swal2-html-container');
+        await expect(element).toHaveText(message);
+
+        //Toast tem até 5s para desaparecer
+        // await expect(element).not.toBeVisible({ timeout: 5000 }); 
     }
 }

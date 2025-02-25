@@ -1,82 +1,51 @@
 {
-    "create": {
-      "title": "Guerra Mundial Z",
-      "overview": "Um ex-investigador da ONU, Gerry Lane, embarca em uma corrida contra o tempo para impedir que uma pandemia zumbi destrua a humanidade.",
-      "company": "Paramount Pictures",
-      "release_year": 2013,
-      "featured": true,
-      "cover": "/covers/movies/wwz.png"
-    },
-    "madrugada_dos_mortos": {
-      "title": "Madrugada dos Mortos",
-      "overview": "Um grupo de sobreviventes se refugia em um shopping center enquanto um apocalipse zumbi devasta o mundo.",
-      "company": "Universal Pictures",
-      "release_year": 2004,
-      "featured": false,
-      "cover": "images/dawn_of_the_dead.png"
-    },
-    "exterminio": {
-      "title": "Extermínio",
-      "overview": "Após um vírus mortal transformar grande parte da população em assassinos sedentos de sangue, um pequeno grupo de sobreviventes tenta escapar do caos.",
-      "company": "Fox Searchlight Pictures",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "images/28_days_later.png"
-    },
-    "duplicate": {
-      "title": "Resident Evil: O Hóspede Maldito",
-      "overview": "Alice e um grupo de soldados precisam conter um vírus mortal que vazou de um laboratório subterrâneo, enquanto enfrentam zumbis e outras criaturas.",
-      "company": "Columbia Pictures",
-      "release_year": 2002,
-      "featured": false,
-      "cover": "/covers/movies/resident-evil.jpg"
-    },
-    "a_noite_dos_mortos_vivos": {
-      "title": "A Noite dos Mortos-Vivos",
-      "overview": "Um grupo de pessoas se tranca em uma casa isolada para se proteger de cadáveres reanimados que vagam em busca de carne humana.",
-      "company": "Continental Distributing",
-      "release_year": 1968,
-      "featured": false,
-      "cover": "images/night_of_the_living_dead.png"
-    },
-    "zumbilandia": {
-      "title": "Zumbilândia",
-      "overview": "Em um mundo pós-apocalíptico dominado por zumbis, um grupo improvável de sobreviventes tenta encontrar um lugar seguro enquanto enfrenta desafios bizarros.",
-      "company": "Columbia Pictures",
-      "release_year": 2009,
-      "featured": false,
-      "cover": "images/zombieland.png"
-    },
-    "rec": {
-      "title": "REC",
-      "overview": "Uma jornalista e seu cinegrafista ficam presos em um prédio em quarentena, onde um vírus misterioso transforma os moradores em criaturas violentas.",
-      "company": "Filmax",
-      "release_year": 2007,
-      "featured": false,
-      "cover": "images/rec.png"
-    },
-    "o_exercito_dos_mortos": {
-      "title": "O Exército dos Mortos",
-      "overview": "Após um surto zumbi em Las Vegas, um grupo de mercenários embarca em um ousado assalto a um cofre em meio ao caos.",
-      "company": "Netflix",
-      "release_year": 2021,
-      "featured": false,
-      "cover": "images/army_of_the_dead.png"
-    },
-    "invasao_zumbi": {
-      "title": "Invasão Zumbi",
-      "overview": "Durante uma viagem de trem para Busan, um grupo de passageiros luta para sobreviver a um surto zumbi que se espalha rapidamente pelo país.",
-      "company": "Next Entertainment World",
-      "release_year": 2016,
-      "featured": false,
-      "cover": "images/train_to_busan.png"
-    },
-    "a_volta_dos_mortos_vivos": {
-      "title": "A Volta dos Mortos-Vivos",
-      "overview": "Após um acidente liberar um gás experimental, os mortos começam a sair de seus túmulos e atacar os vivos em busca de cérebros.",
-      "company": "Orion Pictures",
-      "release_year": 1985,
-      "featured": false,
-      "cover": "images/return_of_the_living_dead.png"
-    }
-  }  
+  "create": {
+    "title": "Guerra Mundial Z",
+    "overview": "Um ex-investigador da ONU, Gerry Lane, embarca em uma corrida contra o tempo para impedir que uma pandemia zumbi destrua a humanidade.",
+    "company": "Paramount Pictures",
+    "release_year": 2013,
+    "featured": true,
+    "cover": "/covers/movies/wwz.png"
+  },
+  "duplicate": {
+    "title": "Resident Evil: O Hóspede Maldito",
+    "overview": "Alice e um grupo de soldados precisam conter um vírus mortal que vazou de um laboratório subterrâneo, enquanto enfrentam zumbis e outras criaturas.",
+    "company": "Columbia Pictures",
+    "release_year": 2002,
+    "featured": false,
+    "cover": "/covers/movies/resident-evil.jpg"
+  },
+  "to_remove": {
+    "title": "A Noite dos Mortos-Vivos",
+    "overview": "Um grupo de pessoas se tranca em uma casa isolada para se proteger de cadáveres reanimados que vagam em busca de carne humana.",
+    "company": "Universal Pictures",
+    "release_year": 1968,
+    "featured": false,
+    "cover": "/covers/movies/mortos-vivos.jpg"
+  },
+  "search": {
+    "input": "zumbi",
+    "outputs": [
+      "Zumbilândia",
+      "Invasão Zumbi"
+    ],
+    "data": [
+      {
+        "title": "Zumbilândia",
+        "overview": "Em um mundo pós-apocalíptico dominado por zumbis, um grupo improvável de sobreviventes tenta encontrar um lugar seguro enquanto enfrenta desafios bizarros.",
+        "company": "Columbia Pictures",
+        "release_year": 2009,
+        "featured": false,
+        "cover": "images/zombieland.png"
+      },
+      {
+        "title": "Invasão Zumbi",
+        "overview": "Durante uma viagem de trem para Busan, um grupo de passageiros luta para sobreviver a um surto zumbi que se espalha rapidamente pelo país.",
+        "company": "Fox Entertainment",
+        "release_year": 2016,
+        "featured": false,
+        "cover": "images/train_to_busan.png"
+      }
+    ]
+  }
+}
