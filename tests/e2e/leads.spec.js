@@ -1,10 +1,15 @@
 const { test, expect } = require('../support');
 const { faker } = require('@faker-js/faker');
+const { executeSQL } = require('../support/database');
 
 // test.beforeAll(async () => { //Roda os resultados dos testes uma única vez para varios testes
 //   randomName = faker.person.fullName();
 //   randomEmail = faker.internet.email();
 // })
+
+test.beforeAll(async () => {
+  await executeSQL(`DELETE from leads`);
+})
 
 test('deve cadastrar um lead na fila de espera', async ({ page }) => {
   const randomName = faker.person.fullName();
